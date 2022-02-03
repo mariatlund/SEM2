@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main></main>
+    <button>Click me</button>
+    <main>
+      <template id="myTemplate">
+        <section>
+          <h1>Cloning template test</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            nobis minus a suscipit molestias ea quam aliquam, quod eum enim iure
+            fugit aliquid eaque molestiae. Repellat qui voluptate ex fuga!
+          </p>
+        </section>
+      </template>
+    </main>
   </body>
 </html>
+
+<script>
+  const myButton = document.querySelector("button");
+  myButton.addEventListener("click", cloneTemplate);
+
+  function cloneTemplate() {
+    const templateElement = document.querySelector("#myTemplate").content;
+    const myClone = templateElement.cloneNode(true);
+    myClone.querySelector("h1").textContent = "Cloned and ready";
+    const parentElement = document.querySelector("main");
+    parentElement.appendChild(myClone);
+  }
+</script>
