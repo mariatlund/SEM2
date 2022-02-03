@@ -67,6 +67,7 @@ li {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .product a:hover {
@@ -125,6 +126,38 @@ h4 {
 .product-button:hover {
   background-color: lightskyblue;
   border-color: lightskyblue;
+}
+
+.product-price-discounted {
+  font-size: 1.5rem;
+  text-align: right;
+  color: pink;
+}
+
+.discount-label {
+  display: block;
+  background-color: palevioletred;
+  max-width: max-content;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  position: absolute;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.soldout-img {
+  opacity: 60%;
+}
+
+.soldout-label {
+  background-color: white;
+  color: lightskyblue;
+  max-width: max-content;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  position: absolute;
+  margin: 1rem;
+  border-radius: 1rem;
 }
 
 .purchase-box {
