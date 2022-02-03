@@ -1,0 +1,53 @@
+body {
+  background-color: slategray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 2rem;
+}
+
+h1 {
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-top: none;
+  border-inline: none;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  color: lightskyblue;
+}
+
+nav {
+  text-align: right;
+}
+
+a:hover {
+  color: lightskyblue;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ol {
+  list-style: none;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+li {
+  padding: 0.5rem;
+  border-style: solid;
+  border-color: white;
+  border-top: none;
+  border-inline: none;
+  border-width: 1px;
+}
