@@ -1,0 +1,13 @@
+{
+  "name": "Maeb",
+  "powers": ["Drawing", "Making comics"],
+  "primaryNemesis": "Photoshop",
+  "img": "https://pbs.twimg.com/media/FKcLLaBWYAQNUrt?format=jpg&name=small",
+  "lifePercentage": 60,
+  "dob": {
+    "day": 1,
+    "month": 2,
+    "year": 1999
+  },
+  "weaknesses": ["Neck pain", "Windows Updates"]
+}
