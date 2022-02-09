@@ -1,4 +1,4 @@
-const url = "https://kea-alt-del.dk/t7/api/products";
+const url = "https://kea-alt-del.dk/t7/api/products?limit=20";
 
 fetch(url)
   .then(function (res) {
@@ -39,7 +39,12 @@ function showProduct(product) {
       product.price - product.price * (product.discount / 100)
     )} ,-`;
   }
-
+  // images
+  copy.querySelector(
+    "img"
+  ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+  // links
+  copy.querySelector("a").setAttribute("href", `product.html?id=${product.id}`);
   // select parent
   const parent = document.querySelector("main");
   // append it

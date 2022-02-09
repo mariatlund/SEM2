@@ -139,7 +139,7 @@ article.soldout-label {
   color: lightskyblue;
 }
 
-article.onSale .discount-label {
+.onSale .discount-label {
   display: block;
   background-color: #253da1;
   max-width: max-content;
@@ -150,11 +150,11 @@ article.onSale .discount-label {
   border-radius: 1rem;
 }
 
-article.soldOut img {
+.soldOut img {
   opacity: 60%;
 }
 
-article.soldOut .soldout-label {
+.soldOut .soldout-label {
   display: block;
   background-color: white;
   color: #253da1;
@@ -199,6 +199,11 @@ article.soldOut .soldout-label {
   padding: 1rem;
   padding-top: 0.2rem;
   border-radius: 1rem;
+}
+
+.product-image {
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 600px) {
