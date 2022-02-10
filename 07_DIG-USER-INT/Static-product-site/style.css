@@ -3,17 +3,25 @@
   list-style: none;
 }
 
+:root {
+  --main-color: #3d3d3d;
+  --primary-color: white;
+  --secondary-color: #2a9df4;
+  --tertiary-color: lightskyblue;
+  --accent-color: #253da1;
+}
+
 body {
-  background-color: #3d3d3d;
+  background-color: var(--main-color);
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: var(--primary-color);
   margin: 2rem;
 }
 
 h1 {
-  color: white;
+  color: var(--primary-color);
   border-style: solid;
-  border-color: white;
+  border-color: var(--primary-color);
   border-width: 1px;
   border-top: none;
   border-inline: none;
@@ -33,12 +41,12 @@ nav {
 }
 
 a:hover {
-  color: lightskyblue;
+  color: var(--tertiary-color);
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--primary-color);
 }
 
 ol {
@@ -57,7 +65,7 @@ main {
 li {
   padding: 0.5rem;
   border-style: solid;
-  border-color: white;
+  border-color: var(--primary-color);
   border-top: none;
   border-inline: none;
   border-width: 1px;
@@ -71,9 +79,9 @@ li {
 }
 
 .product a:hover {
-  background-color: #2a9df4;
-  border-color: #2a9df4;
-  color: white;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 img {
@@ -92,7 +100,7 @@ p {
 }
 
 .product-tags {
-  color: lightskyblue;
+  color: var(--tertiary-color);
   margin: 0.3rem;
   margin-inline: 0rem;
 }
@@ -112,7 +120,7 @@ p {
 }
 
 h4 {
-  color: lightskyblue;
+  color: var(--tertiary-color);
   font-size: 1.2rem;
 }
 
@@ -126,8 +134,8 @@ h4 {
 }
 
 .product-button:hover {
-  background-color: #2a9df4;
-  border-color: #2a9df4;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 article.discount-label,
@@ -136,12 +144,12 @@ article.soldout-label {
 }
 
 .onSale .product-price {
-  color: lightskyblue;
+  color: var(--tertiary-color);
 }
 
 .onSale .discount-label {
   display: block;
-  background-color: #253da1;
+  background-color: var(--accent-color);
   max-width: max-content;
   padding: 0.5rem;
   font-size: 1.5rem;
@@ -156,8 +164,8 @@ article.soldout-label {
 
 .soldOut .soldout-label {
   display: block;
-  background-color: white;
-  color: #253da1;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
   font-weight: bold;
   max-width: max-content;
   padding: 0.5rem;
@@ -190,8 +198,8 @@ article.soldout-label {
 }
 
 .purchase-box li:hover {
-  background-color: #2a9df4;
-  border-color: #2a9df4;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .product-text-box {
