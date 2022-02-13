@@ -68,7 +68,7 @@ function showProduct(product) {
   // links
   copy.querySelector("a").setAttribute("href", `product.html?id=${product.id}`);
   // select parent
-  const parent = document.querySelector("main");
+  const parent = document.querySelector("#product-list");
   // append it
   parent.appendChild(copy);
 }
