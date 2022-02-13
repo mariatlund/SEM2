@@ -7,7 +7,8 @@ const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category");
 const season = urlParams.get("season");
 
-const categoriesURL = "https://kea-alt-del.dk/t7/api/products?" + category;
+const categoriesURL =
+  "https://kea-alt-del.dk/t7/api/products?category=" + category;
 fetch(categoriesURL)
   .then(function (res) {
     return res.json();
@@ -20,7 +21,7 @@ function handleProductList(data) {
   data.forEach(showProduct);
 }
 
-const seasonsURL = "https://kea-alt-del.dk/t7/api/products?" + season;
+const seasonsURL = "https://kea-alt-del.dk/t7/api/products?season=" + season;
 fetch(seasonsURL)
   .then(function (res) {
     return res.json();
